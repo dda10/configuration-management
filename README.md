@@ -19,3 +19,5 @@ ansible-playbook setup.yml
 # Run only the app role
 ansible-playbook setup.yml --tags "app"
 ```
+
+[https://roadmap.sh/projects/configuration-management](https://roadmap.sh/projects/configuration-management)
