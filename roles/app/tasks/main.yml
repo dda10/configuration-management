@@ -1,0 +1,13 @@
+---
+- block:
+    - name: Upload static site tarball
+      copy:
+        src: site.tar.gz
+        dest: /tmp/site.tar.gz
+
+    - name: Extract static site
+      unarchive:
+        src: /tmp/site.tar.gz
+        dest: /var/www/html/
+        remote_src: yes
+  tags: app
